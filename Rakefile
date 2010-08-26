@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "date-casually"
-    gem.summary = %Q{TODO: Easy on the eyes alternative to the Rails distance_of_time_in_words_to_now helper method.}
-    gem.description = %Q{TODO: If you've never liked (and always seem to forget) the name of the Rails distance_of_time_in_words_to_now helper method, then it's time to date casually.}
+    gem.summary = %Q{Easy on the eyes alternative to the Rails distance_of_time_in_words_to_now helper method.}
+    gem.description = %Q{If you've never liked (and always seem to forget) the name of the Rails distance_of_time_in_words_to_now helper method, then it's time to date casually.}
     gem.email = "twmills@twmills.com"
     gem.homepage = "http://github.com/twmills/date-casually"
     gem.authors = ["Theo Mills"]

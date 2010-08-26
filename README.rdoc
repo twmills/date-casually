@@ -37,7 +37,7 @@ If you'd change DateCasually globally, do this:
 
 == i18n
 
-Date-casually hooks into the i18n gem, but currently only supports English.
+DateCasually hooks into the i18n gem, but currently only supports English.
 
 == Dependencies
 

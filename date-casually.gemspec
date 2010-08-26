@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{date-casually}
-  s.version = ""
+  s.version = "0.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Theo Mills"]
   s.date = %q{2010-08-26}
-  s.description = %q{TODO: If you've never liked (and always seem to forget) the name of the Rails distance_of_time_in_words_to_now helper method, then it's time to date casually.}
+  s.description = %q{If you've never liked (and always seem to forget) the name of the Rails distance_of_time_in_words_to_now helper method, then it's time to date casually.}
   s.email = %q{twmills@twmills.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -22,6 +22,8 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
+     "VERSION",
+     "date-casually.gemspec",
      "lib/date-casually.rb",
      "lib/date-casually/calculator.rb",
      "lib/date-casually/config.rb",
@@ -50,7 +52,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO: Easy on the eyes alternative to the Rails distance_of_time_in_words_to_now helper method.}
+  s.summary = %q{Easy on the eyes alternative to the Rails distance_of_time_in_words_to_now helper method.}
   s.test_files = [
     "test/helper.rb",
      "test/test_calculator.rb",

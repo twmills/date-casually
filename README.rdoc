@@ -1,0 +1,78 @@
+= DateCasually
+  
+If you've always expected the Rails date helpers to say "Today", "Yesterday" or "10 days ago" when asked about a specific date, then it's time to date casually. 
+
+I've never liked (and always seem to forget) the name of the Rails distance_of_time_in_words_to_now helper method. Additionally it doesn't handle obvious translations such as "today", "tomorrow" or "yesterday" and it doesn't determine if a date is in the future ("10 days from now") or the past ("10 days ago").
+
+== Quick Examples
+
+  Date.today.casual 
+    #=> 'today'
+  
+  (Date.today + 1).casual 
+    #=> 'tomorrow'
+  
+  (Date.today - 1).casual 
+    #=> 'yesterday'          
+
+== The :as option
+
+If you'd like to force date-casually to always return a date in relation to months, for example, you can use the :as option. The :as option accepts :days, :day_of_week, :weeks, :months and :years.
+
+  (Date.today + 1).casual(:as => :days) 
+    #=> '1 day from now'
+  
+  (Date.today - 45).casual(:as => :days) 
+    #=> '45 days ago'
+  
+  (Date.today + 1).casual(:as => :weeks) 
+    #=> 'less than a week from now'
+  
+  (Date.today + 45).casual(:as => :weeks) 
+    #=> '6 weeks from now'
+  
+  (Date.today + 1).casual(:as => :months) 
+    #=> 'less than a month from now'
+    
+  (Date.today + 45).casual(:as => :months) 
+    #=> 'a couple of months from now'
+  
+  (Date.today + 70).casual(:as => :months) 
+    #=> '3 months from now'
+
+  (Date.today - 45).casual(:as => :years) 
+    #=> 'less than a year ago'
+
+  (Date.today + 900).casual(:as => :years) 
+    #=> 'next year'
+
+== Complete list of casual interpretations
+
+=== No options passed
+
+* today
+* yesterday
+* etc
+
+=== :as => :days
+
+* today
+* yesterday
+* etc
+
+== i18n
+
+Date-casually hooks into Rails i18n library, but currently only supports English.
+
+== Dependencies
+
+* active_support (_for i18n support_)
+* chronic (_only used in the test suite_)
+
+== Roadmap
+
+* timezone support
+* configurable start of week
+* set up config class to handle global options (such as :include)
+* spanish translations (and others if people provide them)
+* configurable ranges (maybe...)

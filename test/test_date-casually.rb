@@ -1,7 +1,2 @@
-require 'helper'
-
-class TestDateCasually < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
-  end
-end
+require "test_calculator"
+require "test_translator"

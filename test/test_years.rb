@@ -46,7 +46,7 @@ class TestYears < Test::Unit::TestCase
     
     # Since years is our highest unit of time (as opposed to decades, etc),
     # we'll also test year counts both with and without the :as => :years option.
-    (3..50).each do |x|
+    (3..10).each do |x|
       define_method method_name("#{x}_years_ago", options) do
         date = parse("#{x} years ago")
         assert_equal I18n.t('date.casual.years_ago', :number => x), date.casual(options)        

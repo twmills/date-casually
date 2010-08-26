@@ -45,7 +45,7 @@ class TestMonths < Test::Unit::TestCase
     end
   end
   
-  (3..100).each do |x|
+  (3..24).each do |x|
     define_method "test_#{x}_months_ago_as_months" do
       date = parse("#{x} months ago")
       assert_equal I18n.t('date.casual.months_ago', :number => x), date.casual(:as => :months)

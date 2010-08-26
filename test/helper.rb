@@ -7,6 +7,7 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'date-casually'
 
+# freeze time for test consistency
 t = Time.local(2008, 9, 1, 10, 5, 0)
 Timecop.travel(t)
 

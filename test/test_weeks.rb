@@ -26,7 +26,7 @@ class TestWeeks < Test::Unit::TestCase
     end
   end
   
-  (3..10).each do |x|
+  (3..53).each do |x|
     define_method "test_#{x}_weeks_ago_as_weeks" do
       date = parse("#{x} weeks ago")
       assert_equal I18n.t('date.casual.weeks_ago', :number => x), date.casual(:as => :weeks)

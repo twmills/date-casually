@@ -1,3 +1,7 @@
+# This file is used to alphabetize the locale YAML files. It doesn't
+# overwrite them, but instead creates sorted copies of them with a 
+# ".sorted" file # extension.
+
 require 'yaml'
 class Hash
   def to_sorted_yaml( opts = {} )
@@ -21,7 +25,7 @@ class Hash
   end
   
 end
-files = Dir.glob(File.join(File.dirname(__FILE__),"*.yml"))
+files = Dir.glob(File.join("..","locale","*.yml"))
 
 files.each do |file|
   hash = YAML::load(File.read(file))

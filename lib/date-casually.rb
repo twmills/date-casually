@@ -3,6 +3,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'rubygems'
 require 'date'
 require 'i18n'
+
 require "date-casually/config"
 require "date-casually/calculator"
 require "date-casually/translator"

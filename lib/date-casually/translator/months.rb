@@ -1,7 +1,6 @@
 module DateCasually
-  module Translators
-  
-    class Months    
+  module Translator
+    module Months    
       
       # Scopes for translation into months
       def self.translate(date)

@@ -1,6 +1,6 @@
 module DateCasually
-  module Translators  
-    class DayOfWeek    
+  module Translator 
+    module DayOfWeek    
     
       # Scopes for translation into day of week
       def self.translate(date)

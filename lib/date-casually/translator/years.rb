@@ -1,6 +1,6 @@
 module DateCasually
-  module Translators  
-    class Years    
+  module Translator
+    module Years    
 
       # Scopes for translation into years
       def self.translate(date)

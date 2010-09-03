@@ -24,8 +24,8 @@ If you'd like to change what increments of time DateCasually returns you can use
 
 You can also pass in multiple options:
 
-  (Date.today + 1).casual(:as => :days, :months, :years) 
-    #=> 'less than a month from now'
+  (Date.today + 12).casual(:as => :days, :months, :years) 
+    #=> 'tomorrow'
     
 The default :as options for DatCasually are:
   

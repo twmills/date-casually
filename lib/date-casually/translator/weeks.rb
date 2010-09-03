@@ -1,6 +1,6 @@
 module DateCasually
-  module Translators  
-    class Weeks    
+  module Translator 
+    module Weeks    
 
         # Scopes for translation into weeks
         def self.translate(date)

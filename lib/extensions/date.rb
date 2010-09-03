@@ -2,7 +2,7 @@
 # via the 'casual' method. 
 class Date
   
-  # Translates the current date object (self) into its language-based
+  # Public: Translates the current date object (self) into its language-based
   # equivalent.
   #
   # options  - List of options to control what the casual method outputs.

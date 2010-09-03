@@ -7,5 +7,5 @@ require 'helper'
 # 1.upto(max).each do |x|
 #   puts "-#{(Date.today - x).to_s} = #{(Date.today - x).casual(:as => as)}"
 # end
-DateCasually::Config.as = :months
-puts (Date.today + 1).casual
+DateCasually::Config.as = :months, :years
+puts (Date.today + 6).casual(:as => :day_of_week)

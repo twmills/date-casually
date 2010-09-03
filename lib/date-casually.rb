@@ -6,11 +6,11 @@ require 'i18n'
 require "date-casually/config"
 require "date-casually/calculator"
 require "date-casually/translator"
-require "date-casually/translators/days"
-require "date-casually/translators/weeks"
-require "date-casually/translators/months"
-require "date-casually/translators/day_of_week"
-require "date-casually/translators/years"
+require "date-casually/translator/days"
+require "date-casually/translator/weeks"
+require "date-casually/translator/months"
+require "date-casually/translator/day_of_week"
+require "date-casually/translator/years"
 require "extensions/date"
 
 # load up translations

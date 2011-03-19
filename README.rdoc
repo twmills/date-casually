@@ -29,7 +29,7 @@ You can also pass in multiple options:
     
 The default :as options for DatCasually are:
   
-  (Date.today + 1).casual(:as => :days, :weeks, :months, :years) 
+  (Date.today + 1).casual(:as => [:days, :weeks, :months, :years]) 
   
 If you'd change DateCasually globally, do this:
 

@@ -19,13 +19,13 @@ I've never liked (and always seem to forget) the name of the Rails distance_of_t
 
 If you'd like to change what increments of time DateCasually returns you can use the :as option. 
   
-  (Date.today + 1).casual(:as => :months) 
+  (Date.today + 1).casual(:as => [ :months, :years ]) 
     #=> 'less than a month from now'
 
 You can also pass in multiple options:
 
-  (Date.today + 12).casual(:as => :days, :months, :years) 
-    #=> 'tomorrow'
+  (Date.today + 12).casual(:as => :days) 
+    #=> '12 days from now'
     
 The default :as options for DatCasually are:
   
@@ -42,13 +42,5 @@ DateCasually hooks into the i18n gem, but currently only supports English.
 == Dependencies
 
 * i18n
-* chronic (_only used in the test suite_)
-* timecop (_only used in the test suite_)
-
-== Roadmap
-
-* timezone support
-* configurable start of week
-* set up config class to handle global options (such as :include)
-* spanish translations (and others if people provide them)
-* configurable ranges (maybe...)
+* chronic (only used in the test suite)
+* timecop (only used in the test suite)

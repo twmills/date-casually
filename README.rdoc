@@ -19,13 +19,13 @@ I've never liked (and always seem to forget) the name of the Rails distance_of_t
 
 If you'd like to change what increments of time DateCasually returns you can use the :as option. 
   
-  (Date.today + 1).casual(:as => [ :months, :years ]) 
-    #=> 'less than a month from now'
+  (Date.today + 12).casual(:as => :days) 
+    #=> '12 days from now'
 
 You can also pass in multiple options:
 
-  (Date.today + 12).casual(:as => :days) 
-    #=> '12 days from now'
+  (Date.today + 1).casual(:as => [ :months, :years ]) 
+    #=> 'less than a month from now'
     
 The default :as options for DatCasually are:
   

@@ -15,4 +15,4 @@ require "date-casually/translator/years"
 require "extensions/date"
 
 # load up translations
-I18n.load_path << Dir[File.join(File.dirname(__FILE__), 'locale', '*.{rb,yml}')]
+I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'locale', '*.{rb,yml}')]

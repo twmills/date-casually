@@ -18,7 +18,7 @@ module DateCasually
       # Translates into number of days away, e.g. "6 days ago"
       def self.translate_count(date)
         i18n_key = (date < Date.today) ? 'ago' : 'from_now'
-        I18n.t("date.casual.days_#{i18n_key}", :number => (date - Date.today).abs) 
+        I18n.t("date.casual.days_#{i18n_key}", :number => (date - Date.today).round.abs) 
       end
     
     end

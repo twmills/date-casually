@@ -14,8 +14,8 @@ en:
       couple_of_weeks_from_now: a couple of weeks from now
       couple_of_years_ago: a couple of years ago
       couple_of_years_from_now: a couple of years from now
-      days_ago: %{number} days ago
-      days_from_now: %{number} days from now
+      days_ago: "%{number} days ago"
+      days_from_now: "%{number} days from now"
       exactly_one_month_ago: exactly one month ago
       exactly_one_month_from_now: exactly one month from now
       in_a_couple_of_days: in a couple of days
@@ -36,8 +36,8 @@ en:
       less_than_a_week_from_now: less than a week from now
       less_than_a_year_ago: less than a year ago
       less_than_a_year_from_now: less than a year from now
-      months_ago: %{number} months ago
-      months_from_now: %{number} months from now
+      months_ago: "%{number} months ago"
+      months_from_now: "%{number} months from now"
       more_than_a_month_ago: more than a month ago
       more_than_a_month_from_now: more than a month from now
       more_than_a_week_ago: more than a week ago
@@ -71,22 +71,22 @@ en:
       this_wday_6: this Saturday
       today: today
       tomorrow: tomorrow
-      wdays_ago_0: %{number} Sundays ago
-      wdays_ago_1: %{number} Mondays ago
-      wdays_ago_2: %{number} Tuesdays ago
-      wdays_ago_3: %{number} Wednesdays ago
-      wdays_ago_4: %{number} Thursdays ago
-      wdays_ago_5: %{number} Fridays ago
-      wdays_ago_6: %{number} Saturdays ago
-      wdays_from_now_0: %{number} Sundays from now
-      wdays_from_now_1: %{number} Mondays from now
-      wdays_from_now_2: %{number} Tuesdays from now
-      wdays_from_now_3: %{number} Wednesdays from now
-      wdays_from_now_4: %{number} Thursdays from now
-      wdays_from_now_5: %{number} Fridays from now
-      wdays_from_now_6: %{number} Saturdays from now
-      weeks_ago: %{number} weeks ago
-      weeks_from_now: %{number} weeks from now
-      years_ago: %{number} years ago
-      years_from_now: %{number} years from now
+      wdays_ago_0: "%{number} Sundays ago"
+      wdays_ago_1: "%{number} Mondays ago"
+      wdays_ago_2: "%{number} Tuesdays ago"
+      wdays_ago_3: "%{number} Wednesdays ago"
+      wdays_ago_4: "%{number} Thursdays ago"
+      wdays_ago_5: "%{number} Fridays ago"
+      wdays_ago_6: "%{number} Saturdays ago"
+      wdays_from_now_0: "%{number} Sundays from now"
+      wdays_from_now_1: "%{number} Mondays from now"
+      wdays_from_now_2: "%{number} Tuesdays from now"
+      wdays_from_now_3: "%{number} Wednesdays from now"
+      wdays_from_now_4: "%{number} Thursdays from now"
+      wdays_from_now_5: "%{number} Fridays from now"
+      wdays_from_now_6: "%{number} Saturdays from now"
+      weeks_ago: "%{number} weeks ago"
+      weeks_from_now: "%{number} weeks from now"
+      years_ago: "%{number} years ago"
+      years_from_now: "%{number} years from now"
       yesterday: yesterday
